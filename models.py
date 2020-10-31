@@ -3,9 +3,9 @@ from tinymce import HTMLField
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone 
 from django.core.exceptions import ValidationError
-from box.core import settings as core_settings
+from sw_utils import settings as core_settings
 
-from box.core.models import BaseMixin, AbstractPage
+from sw_utils.models import BaseMixin, AbstractPage
 from .abstract_models import (
   AbstractContent, AbstractText, AbstractLink,
 )
@@ -237,7 +237,7 @@ class Slider(BaseMixin):
 
 from django.db import models 
 from django.shortcuts import reverse 
-from box.core.models import BaseMixin
+from sw_utils.models import BaseMixin
 from django.utils.translation import gettext_lazy as _
 
 class Faq(BaseMixin):

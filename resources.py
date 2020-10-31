@@ -1,6 +1,6 @@
 from import_export.resources import ModelResource
 
-from box.core.utils import get_multilingual_fields
+from sw_utils.utils import get_multilingual_fields
 from .abstract_resources import (
     AbstractContentResource, AbstractLinkResource, 
     AbstractTextResource,

@@ -10,8 +10,8 @@ from import_export.admin import ImportExportActionModelAdmin, ImportExportModelA
 from adminsortable2.admin import SortableAdminMixin, SortableInlineAdminMixin
 
 
-from box.core.utils import AdminImageWidget, move_to, BaseAdmin
-from box.core.helpers import get_admin_url
+from sw_utils.utils import AdminImageWidget, move_to, BaseAdmin
+from sw_utils.helpers import get_admin_url
 
 
 from ..models import *

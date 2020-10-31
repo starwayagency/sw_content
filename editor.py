@@ -3,7 +3,7 @@ from django.utils.html import mark_safe, strip_tags
 from django.shortcuts import reverse, render
 from django.template.loader import render_to_string
 
-from box.core.sw_content.models import *
+from sw_utils.sw_content.models import *
 
 
 
@@ -28,14 +28,14 @@ def get_class(content_type):
         'slider':  Slider,
         'slide':   Slide,
     }
-    if 'box.apps.sw_shop.sw_catalog' in settings.INSTALLED_APPS:
-        from box.apps.sw_shop.sw_catalog.models import Item, ItemCategory
+    if 'sw_shop.sw_catalog' in settings.INSTALLED_APPS:
+        from sw_shop.sw_catalog.models import Item, ItemCategory
         mapper.update({
             'item':          Item,
             'item_category': ItemCategory,
         })
-    if 'box.apps.sw_blog' in settings.INSTALLED_APPS:
-        from box.apps.sw_blog.models import Post, PostCategory
+    if 'sw_blog' in settings.INSTALLED_APPS:
+        from sw_blog.models import Post, PostCategory
         mapper.update({
             'post':          Post,
             'post_category': PostCategory,

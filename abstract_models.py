@@ -2,8 +2,8 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone 
 
-from box.core.helpers import get_admin_url
-from box.core.models import BaseMixin
+from sw_utils.helpers import get_admin_url
+from sw_utils.models import BaseMixin
 
 # class AbstractContent(models.Model):
   # code    = models.SlugField(

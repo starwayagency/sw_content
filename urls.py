@@ -3,7 +3,7 @@ from .views import *
 
 
 urlpatterns = [
-    path('', include('box.core.sw_content.api.urls')),
+    path('', include('sw_utils.sw_content.api.urls')),
     # path('<code>/',  page,  name='page'),
 ]
 

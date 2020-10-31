@@ -3,7 +3,7 @@ from import_export.resources import ModelResource
 from .abstract_models import * 
 from .models import Page 
 
-from box.core.utils import get_multilingual_fields
+from sw_utils.utils import get_multilingual_fields
 
 
 class AbstractContentResource(ModelResource):
