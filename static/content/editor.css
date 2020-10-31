@@ -1,0 +1,26 @@
+.admin-panel{
+    background-color: lightblue;
+    position: fixed;
+    top: 40%;
+    opacity: 1;
+}
+
+.admin-panel a {
+    border: 1px solid black;
+} 
+
+.db_content{
+    position: relative;
+}
+.show {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    opacity: 0; 
+    visibility: hidden;
+    transition-property: opacity, visibility; 
+    transition-duration: 0.2s; 
+    transition-delay: 0.15s; 
+}
+
