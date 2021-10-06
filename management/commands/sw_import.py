@@ -139,13 +139,16 @@ class Command(BaseCommand):
       for error in result.row_errors():
         row = error[0]
         error = error[1][0]
-        try:
-          raise error.error
-          # raise Exception(error.error)
-        except ObjectDoesNotExist:
-          errors.append(error.error)
+        # raise error.error
+        # try:
+        #   raise error.error
+        #   # raise Exception(error.error)
+        # except ObjectDoesNotExist:
+        #   errors.append(error.error)
         print(f"ERROR IN {row} LINE IN FILE {filename}:", error.error)
         # return self.load(filename,resource_name,ext)
+      else:
+        return None
       return {
         "status":"OK",
         "errors":errors,
